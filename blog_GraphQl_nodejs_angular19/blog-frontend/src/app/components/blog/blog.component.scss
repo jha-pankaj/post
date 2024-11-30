@@ -1,0 +1,32 @@
+.main-container {
+  overflow: auto;
+  height: 100vh;
+  display: block;
+  max-width: 1920px;
+  margin: 0 auto;
+  .layout {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    line-height: 1.25rem;
+    min-height: 100vh;
+    min-width: 300px;
+    .main-body {
+      padding-top: 3.75rem;
+      min-height: 100vh;
+      display: flex;
+      flex: 1;
+      -ms-flex: 1 1 auto;
+      flex-direction: row;
+
+      .content {
+        display: flex;
+        flex: 1;
+        -ms-flex: 1 1 auto;
+        flex-direction: column;
+        min-width: 0;
+        padding:0.75rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,25 @@
+.container {
+  max-width: 700px;
+}
+
+.card {
+  border-radius: 10px;
+}
+
+.btn {
+  font-size: 0.9rem;
+}
+
+.list-group-item {
+  border: none;
+  padding: 10px 0;
+  border-bottom: 1px solid #e9ecef;
+}
+
+.list-group-item:last-child {
+  border-bottom: none;
+}
+
+input.form-control {
+  border-radius: 10px;
+}

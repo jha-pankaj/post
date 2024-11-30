@@ -1,0 +1,23 @@
+<mat-toolbar color="primary">User Management</mat-toolbar>
+<div fxLayout="column" fxLayoutAlign="center center">
+  <mat-card>
+    <mat-card-title>Add User</mat-card-title>
+    <mat-card-content>
+      <mat-form-field>
+        <input matInput placeholder="Name" [(ngModel)]="name" />
+      </mat-form-field>
+      <mat-form-field>
+      <input matInput placeholder="email" [(ngModel)]="email" />
+    </mat-form-field>
+     </mat-card-content>
+  
+  </mat-card>
+  <button mat-raised-button color="primary" (click)="addUser()">Add</button>
+  
+
+  <mat-list>
+    <h3 mat-subheader>Users</h3>
+    <mat-list-item *ngFor="let user of users">{{ user.name }}</mat-list-item>
+    <mat-list-item *ngFor="let user of users">{{ user.email }}</mat-list-item>
+  </mat-list>
+</div>

@@ -1,0 +1,22 @@
+<div class="header-main fixed">
+ <nav>
+    <div class="header-container">
+      Trail of Thoughts
+      </div>
+    <div class="header-right-container">
+         <div>
+            <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu">
+                <mat-icon class="menu-r">more_vert</mat-icon>
+              </button>
+              <mat-menu #menu="matMenu">
+                <button mat-menu-item>
+                   <span>Logout</span>
+                </button>
+                    <button mat-menu-item>
+                     <span>About</span>
+                </button>
+              </mat-menu>
+        </div>
+    </div>
+ </nav>
+</div>
