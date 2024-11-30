@@ -9,7 +9,13 @@ const resolvers = require('./resolvers');
 dotenv.config();
 const app = express();
 
-const server = new ApolloServer({ typeDefs, resolvers });
+const server = new ApolloServer({
+  typeDefs,
+  resolvers,
+  persistedQueries: {
+    cache: "bounded" // Ensure a bounded cache
+  }
+});
 
 server.start().then(() => {
   server.applyMiddleware({ app });
