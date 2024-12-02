@@ -4,7 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build --configuration=production",
+	"postbuild": "node postbuild.js",
+	 "bbuild": "npm run build && npm run postbuild",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "serve:ssr:blog-frontend": "node dist/blog-frontend/server/server.mjs"
