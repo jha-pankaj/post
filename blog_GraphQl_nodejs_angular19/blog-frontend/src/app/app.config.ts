@@ -15,7 +15,7 @@ export const appConfig: ApplicationConfig = {
 
       return {
         link: httpLink.create({
-          uri: 'http://localhost:4000/graphql',
+          uri: 'https://post-wgcy.onrender.com/graphql',
         }),
         cache: new InMemoryCache({resultCaching:false}),
       };

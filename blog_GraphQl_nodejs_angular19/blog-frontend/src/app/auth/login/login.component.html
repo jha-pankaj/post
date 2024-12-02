@@ -24,8 +24,9 @@
           required
         />
       </div>
-      <button type="submit" class="btn btn-primary w-100" [disabled]="loginForm.invalid">
-        Login
+      <button type="submit" class="btn btn-primary w-100 inline" [disabled]="isLoading || loginForm.invalid">
+        <span *ngIf="!isLoading" >Login</span>
+        <span><mat-spinner *ngIf="isLoading" color="white" diameter="20"></mat-spinner></span>
       </button>
       <p class="text-center mt-3 reg">
         Don't have an account? <a routerLink="/register">Register</a>

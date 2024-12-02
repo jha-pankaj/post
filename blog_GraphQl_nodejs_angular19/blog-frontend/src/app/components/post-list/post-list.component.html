@@ -43,4 +43,9 @@
 </div>
 }
 
+@if (loading) {
+  <div class="spinner-container">
+    <mat-spinner />
+  </div>
+}
 <app-add-post (onPostSuccess)="onPostSuccess($event)"></app-add-post>
