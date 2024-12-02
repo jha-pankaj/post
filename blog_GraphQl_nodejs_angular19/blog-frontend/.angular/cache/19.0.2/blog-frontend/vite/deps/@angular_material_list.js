@@ -2,9 +2,6 @@ import {
   SelectionModel
 } from "./chunk-RFP5XKBT.js";
 import {
-  NG_VALUE_ACCESSOR
-} from "./chunk-UFNZPIAR.js";
-import {
   A,
   CdkObserveContent,
   ENTER,
@@ -24,6 +21,9 @@ import {
   coerceNumberProperty,
   hasModifierKey
 } from "./chunk-V5ATUUJ7.js";
+import {
+  NG_VALUE_ACCESSOR
+} from "./chunk-UFNZPIAR.js";
 import {
   NgTemplateOutlet
 } from "./chunk-3N5XDGZU.js";

@@ -28,7 +28,7 @@ const resolvers = {
             options: { strictPopulate: false }, // Avoid strict population errors
           });
         //  return posts;
-          console.log(posts);
+         
           return posts;
         // Ensure comments is always an array
     
