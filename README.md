@@ -1,2 +1,7 @@
 # post
-blogging site
+Blogging site
+
+## Backend - NodeJS,MongoDB
+## Frontend - Angular anf graphQL
+  
+
